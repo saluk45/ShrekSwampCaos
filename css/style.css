@@ -1,0 +1,31 @@
+    /* ===== Reset / basic ===== */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;background:#0b0b0f;color:#eee;font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
+    #game-root{display:flex;gap:16px;padding:16px;height:100vh}
+
+    /* ===== Layout ===== */
+    #stage{flex:1;display:flex;align-items:center;justify-content:center}
+    canvas{background:linear-gradient(180deg,#111 0%, #0b1020 100%);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.7)}
+    #sidebar{width:360px;background:linear-gradient(180deg,#0f1220,#0b0f16);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:12px}
+
+    /* ===== HUD / panels ===== */
+    .panel{background:rgba(255,255,255,0.03);padding:12px;border-radius:8px;overflow:auto}
+    h2{font-size:14px;margin-bottom:8px;color:#cfe8ff}
+    .row{display:flex;gap:8px;align-items:center}
+
+    /* ===== Buttons ===== */
+    button{background:#1f2937;border:0;color:#e6eef9;padding:8px 10px;border-radius:8px;cursor:pointer}
+    button:active{transform:translateY(1px)}
+
+    /* ===== Character card ===== */
+    .char-list{display:flex;flex-direction:column;gap:8px}
+    .char{display:flex;gap:8px;align-items:center;padding:8px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+    .char img{width:48px;height:48px;object-fit:cover;border-radius:6px}
+    .meter{height:10px;background:#2b2b36;border-radius:8px;overflow:hidden}
+    .meter > i{display:block;height:100%;background:linear-gradient(90deg,#8b5cf6,#06b6d4)}
+
+    /* ===== Footer ===== */
+    footer{font-size:12px;color:#9aa7bf;margin-top:auto}
+
+    /* ===== Responsive tweak ===== */
+    @media(max-width:900px){#game-root{flex-direction:column}#sidebar{width:100%;height:320px}}

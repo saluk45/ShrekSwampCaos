@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ecos do Caos — Base do Jogo</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="game-root">
+    <div id="stage">
+      <canvas id="game-canvas" width="960" height="600"></canvas>
+    </div>
+
+    <aside id="sidebar">
+      <div class="panel">
+        <h2>Controle Rápido</h2>
+        <div class="row" style="flex-direction:column;gap:6px">
+          <div>Movimento: <strong>W A S D</strong> / Atacar: <strong>J</strong> / Habilidade: <strong>K</strong></div>
+          <div>Mudar personagem: <strong>1-5</strong> / Pausa: <strong>Esc</strong></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Equipe</h2>
+        <div class="char-list" id="char-list"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Estado do Jogo</h2>
+        <div id="status">Carregando...</div>
+      </div>
+
+      <div class="panel">
+        <h2>Diálogo & Logs</h2>
+        <div id="log" style="height:160px;overflow:auto;font-size:13px;line-height:1.2"></div>
+      </div>
+
+      <footer>
+        Ecos do Caos — protótipo base • arquivo único HTML • Sistema: Canvas + JS
+      </footer>
+    </aside>
+  </div>
+
+  <script src="./js/game.js"></script>
+</body>
+</html>
